@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 
@@ -54,6 +55,17 @@ namespace CST_gokart
             return sb.ToString().Normalize(NormalizationForm.FormC);
         }
 
+        static void elvalaszto()
+        {
+                       
+            for (int i = 0; i < 40; i++)
+            {
+                Console.Write("-");
+                Thread.Sleep(5);
+            }
+           Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             #region Köszöntő szöveg
@@ -72,12 +84,28 @@ namespace CST_gokart
             Console.WriteLine("\n");
             #endregion
 
-            #region Elérhetőségek
-            Console.WriteLine("Elérhetőségek:");
-            Console.WriteLine("\t Név: GoKartTrack");
-            Console.WriteLine("\t Cím: 1234 Budapest, Gokart utca 4.");
-            Console.WriteLine("\t Telefon: +36 1 234 5678");
-            Console.WriteLine("\t Weboldal: GoKartTrack.hu\n");
+            #region Elérhetőségek és nyitvatartás
+
+            //Elérhetőségek
+            elvalaszto();
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.Write("Elérhetőségek: \t");
+            Console.ResetColor();
+
+            Console.Write("GoKartTrack Élményközpont | ");
+            Console.Write("1111 Budapest, Versenypálya utca 9. | ");
+            Console.Write("+36 30 987 6543 | ");
+            Console.Write("GoKartTrack.hu\n\n");
+
+            //Nyitvatartás
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.Write("Nyitvatartás: \t");
+            Console.ResetColor();
+
+            Console.Write("Hétfő-Vasárnap: 8:00 - 19:00\n");
+            
+            elvalaszto();
+            Console.WriteLine();
             #endregion
 
             #region Versenyzők adatai
@@ -111,12 +139,24 @@ namespace CST_gokart
             #endregion
 
             #region Napi foglalás kiválasztása
-            Console.Write("Melyik napra szeretnéd megnézni a foglalásokat? (ÉÉÉÉ-HH-NN formátumban): ");
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("FOGLALÁS:");
+            Console.ResetColor();
+
+            Console.Write("\tMelyik napon szeretnéd megnézni a foglalásokat? (ÉÉÉÉ-HH-NN vagy ÉÉÉÉ.HH.NN formátumban): ");
             string datumInput = Console.ReadLine();
             DateTime foglalasNap;
+            /*
             while (!DateTime.TryParseExact(datumInput, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out foglalasNap))
             {
-                Console.WriteLine("Hibás formátum! Kérlek add meg újra (ÉÉÉÉ-HH-NN):");
+                Console.Write("Hibás formátum! Kérlek add meg újra (ÉÉÉÉ-HH-NN):");
+                datumInput = Console.ReadLine();
+            }
+            */
+
+            while (!DateTime.TryParse(datumInput, out foglalasNap))
+            {
+                Console.Write("Hibás formátum! Kérlek add meg újra (ÉÉÉÉ-HH-NN vagy ÉÉÉÉ.HH.NN): ");
                 datumInput = Console.ReadLine();
             }
 
