@@ -75,7 +75,7 @@ namespace CST_gokart
             #region Elérhetőségek
             Console.WriteLine("Elérhetőségek:");
             Console.WriteLine("\t Név: GoKartTrack");
-            Console.WriteLine("\t Cím: 1234 Budapest, Gokart utca 1.");
+            Console.WriteLine("\t Cím: 1234 Budapest, Gokart utca 4.");
             Console.WriteLine("\t Telefon: +36 1 234 5678");
             Console.WriteLine("\t Weboldal: GoKartTrack.hu\n");
             #endregion
