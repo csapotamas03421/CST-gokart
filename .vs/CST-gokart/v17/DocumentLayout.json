@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CsapoTamas\\Desktop\\Asztali\\CST-gokart\\",
+  "WorkspaceRootPath": "C:\\Users\\csapo\\Desktop\\IT\\C#\\12D\\CST-gokart\\CST-gokart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{754C956C-5264-49C7-AE5A-67D98721AB7C}|CST-gokart\\CST-gokart.csproj|c:\\users\\csapotamas\\desktop\\asztali\\cst-gokart\\cst-gokart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{754C956C-5264-49C7-AE5A-67D98721AB7C}|CST-gokart\\CST-gokart.csproj|c:\\users\\csapo\\desktop\\it\\c#\\12d\\cst-gokart\\cst-gokart\\cst-gokart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{754C956C-5264-49C7-AE5A-67D98721AB7C}|CST-gokart\\CST-gokart.csproj|solutionrelative:cst-gokart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\CsapoTamas\\Desktop\\Asztali\\CST-gokart\\CST-gokart\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\csapo\\Desktop\\IT\\C#\\12D\\CST-gokart\\CST-gokart\\CST-gokart\\Program.cs",
               "RelativeDocumentMoniker": "CST-gokart\\Program.cs",
-              "ToolTip": "C:\\Users\\CsapoTamas\\Desktop\\Asztali\\CST-gokart\\CST-gokart\\Program.cs",
+              "ToolTip": "C:\\Users\\csapo\\Desktop\\IT\\C#\\12D\\CST-gokart\\CST-gokart\\CST-gokart\\Program.cs",
               "RelativeToolTip": "CST-gokart\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwCMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAANwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T11:14:36.709Z",
               "EditorCaption": ""
